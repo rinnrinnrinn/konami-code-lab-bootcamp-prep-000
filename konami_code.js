@@ -42,7 +42,7 @@ function onKeyDownHandler(e) {
     if (index === alphabet.length) {
       alert("Hurray!");
  
-      index = 10;
+      index = 0;
     }
   } else {
     index = 0;
