@@ -31,7 +31,7 @@ let index = 0;
 
 function onKeyDownHandler(event) {
   const key = event.key;
- 
+  alert(key)
   if (key === alphabet[index]) {
     index++;
     if (index === alphabet.length) {
