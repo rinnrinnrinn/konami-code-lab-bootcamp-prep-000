@@ -31,7 +31,7 @@ const alphabet = [
   "b",
   "a"];
  
-let index = 10;
+let index = 0;
 
 function onKeyDownHandler(e) {
   const key = e.key;
