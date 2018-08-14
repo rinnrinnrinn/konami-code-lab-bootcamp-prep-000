@@ -19,7 +19,8 @@ document.addEventListener('keydown', (event) => {
   alert('keydown event\n\n' + 'key: ' + keyName);
 });
 
-const alphabet = ["ArrowUp",
+const alphabet = [
+  "ArrowUp",
   "ArrowUp",
   "ArrowDown",
   "ArrowDown",
