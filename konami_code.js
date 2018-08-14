@@ -42,6 +42,6 @@ function onKeyDownHandler(event) {
   }
 }
 
-document.addEventListener('keydown', onKeyDownHandler);
+document.body.addEventListener('keydown', onKeyDownHandler);
 
 }
