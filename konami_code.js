@@ -12,7 +12,7 @@ const codes = [
 ];
 
 function init() {
-  const main = document.getElementById('main')
+  const main = document.body.getElementById('keydown')
  
 main.addEventListener('click', function(event) {
   alert('I was clicked!')
