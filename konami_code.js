@@ -11,11 +11,21 @@ const codes = [
   "a"
 ];
 
-let index = 0;
+
 
 function init() {
-  const main = document.body.getElementById('main')
+function onKeyDownHandler(e) {
+  const key = e.key;
  
-main.addEventListener('keydown', function(event) {
-  alert('Nice job!')
-})}
+  if (key === alphabet[index]) {
+    index++;
+ 
+    if (index === alphabet.length) {
+      alert("Hurray!");
+ 
+      index = 0;
+    }
+  } else {
+    index = 0;
+  }
+}
