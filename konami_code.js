@@ -14,6 +14,20 @@ const codes = [
 
 
 function init() {
+
+const alphabet = ["ArrowUp",
+  "ArrowUp",
+  "ArrowDown",
+  "ArrowDown",
+  "ArrowLeft",
+  "ArrowRight",
+  "ArrowLeft",
+  "ArrowRight",
+  "b",
+  "a"];
+ 
+let index = 10;
+
 function onKeyDownHandler(e) {
   const key = e.key;
  
@@ -23,9 +37,10 @@ function onKeyDownHandler(e) {
     if (index === alphabet.length) {
       alert("Hurray!");
  
-      index = 0;
+      index = 10;
     }
   } else {
     index = 0;
   }
+}
 }
