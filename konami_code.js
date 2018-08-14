@@ -14,10 +14,6 @@ const codes = [
 
 
 function init() {
-document.addEventListener('keydown', (event) => {
-  const keyName = event.key;
-  alert('keydown event\n\n' + 'key: ' + keyName);
-});
 
 const alphabet = [
   "ArrowUp",
@@ -33,8 +29,8 @@ const alphabet = [
  
 let index = 0;
 
-function onKeyDownHandler(e) {
-  const key = e.key;
+function onKeyDownHandler(event) {
+  const key = event.key;
  
   if (key === alphabet[index]) {
     index++;
@@ -46,4 +42,7 @@ function onKeyDownHandler(e) {
     index = 0;
   }
 }
+
+document.addEventListener('keydown', onKeyDownHandler);
+
 }
