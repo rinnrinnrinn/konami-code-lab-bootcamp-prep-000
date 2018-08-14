@@ -11,9 +11,11 @@ const codes = [
   "a"
 ];
 
+let index = 0;
+
 function init() {
-  const main = document.body.getElementById('keydown')
+  const main = document.body.getElementById('main')
  
-main.addEventListener('click', function(event) {
-  alert('I was clicked!')
+main.addEventListener('keydown', function(event) {
+  alert('Nice job!')
 })}
